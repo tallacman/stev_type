@@ -1,9 +1,7 @@
 $base-font-size: 100%;
-
 $base-font-family: Helvetica, sans-serif;
 $header-font-family: serif;
 $header-font-weight: 700;
-
 $paragraph-bottom-margin: 2rem;
 /*
 	get the breakpoints from the framework
@@ -12,118 +10,92 @@ $xs-breakpoint: 30rem;
 $sm-breakpoint: 45rem;
 $md-breakpoint: 60rem;
 $lg-breakpoint: 80rem;
-
 $xs-font-size: 85%;
 $sm-font-size: 90%;
 $md-font-size: 100%;
 $lg-font-size: 115%;
-
-
-
-
 html {
 	font-size: $base-font-size;
 }
-
 /*  	setting the html font size for REM units
 	setting the body font size for EM units and responsive calls
 	percent font size preserves browser settings
 */
-
 body {
 	font-family: $base-font-family;
 }
-
 @media only screen and (min-width: 0) and (max-width: $xs-breakpoint) {
-
 	body {
 		font-size: $xs-font-size;
 	}
-
 }
 @media only screen and (min-width: $sm-breakpoint) {
-
 	body {
 		font-size: $sm-font-size;
 	}
-
 }
 @media only screen and (min-width: $md-breakpoint) {
-
 	body {
 		font-size: $md-font-size;
 	}
-
 }
-
-@media only screen  and (min-width: $lg-breakpoint) {
-
+@media only screen and (min-width: $lg-breakpoint) {
 	body {
 		font-size: $lg-font-size;
 	}
-
 }
-
 * + * {
-	margin-top: .8em;
+	margin-top: 0.8em;
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: $header-font-family;
 	font-weight: $header-font-weight;
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
-
 /* manually computer 1.2x base font size */
-
-
 h1 {
 	font-size: 2.48832em;
 }
-
 h2 {
 	font-size: 2.0736em;
 }
-
 h3 {
 	font-size: 1.728em;
 }
-
 h4 {
 	font-size: 1.44em;
 }
-
 h5 {
 	font-size: 1.2em;
 }
-
 h6 {
 	font-size: 1em;
 }
-
 p {
 	font-size: 1em;
 	line-height: 1.4;
 }
-
 p ~ p {
 	margin-bottom: $paragraph-bottom-margin;
 }
-
-ul, ol, dl {
+dl,
+ol,
+ul {
 	margin-top: 2rem;
 }
-
 dt {
 	font-weight: bold;
 }
-
 dd {
 	font-style: italic;
 	margin-bottom: 1rem;
-	margin-top: .5rem;
+	margin-top: 0.5rem;
 }
-
 li {
-	margin-top: .5rem;
+	margin-top: 0.5rem;
 }
